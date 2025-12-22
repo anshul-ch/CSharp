@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CapgeminiTraining
+namespace CSharp.Day3_OOPS
 {
     /// <summary>
     /// Implementing a method function from another clas

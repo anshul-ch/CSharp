@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CapgeminiTraining.Day3_OOPS
+namespace CSharp.Day3_OOPS
 {
     /// <summary>
     /// This code contains the addition of 2 numbers using constructors.

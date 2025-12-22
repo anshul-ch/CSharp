@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CapgeminiTraining.Day3_OOPS
+namespace CSharp.Day3_OOPS
 {
     /// <summary>
     /// THis program validates if the parameters in the constructor are valid or not.

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CapgeminiTraining
+namespace CSharp.Day3_OOPS
 {
     /// <summary>
     /// Class to be implemeted in another class file

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Numerics;
 using System.Text;
 
-namespace CapgeminiTraining.Day3_OOPS
+namespace CSharp.Day3_OOPS
 {
     public class ConstructorLLogsCreation
     {

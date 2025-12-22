@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using CapgeminiTraining.ConstructorsEX;  // to use the Construcor file templates
 
-namespace CapgeminiTraining
+namespace CSharp.Day3_OOPS
 {
     /// <summary>
     /// Usage of private and public constructors

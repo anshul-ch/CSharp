@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CapgeminiTraining.ConstructorsEX
+namespace CSharp.Day3_OOPS
 {
     /// <summary>
     /// this program implemetns the constructor template to be used for input in another file.

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CapgeminiTraining
+namespace CSharp.Day3_OOPS
 {
     /// <summary>
     /// This code gives ghe basic functions of a class with member functions and member variables

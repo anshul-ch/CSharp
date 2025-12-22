@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace CapgeminiTraining.Day3_OOPS
+namespace CSharp.Day3_OOPS
 {
     /// <summary>
     /// This program implements the concept of Fields and how to assign values to them
