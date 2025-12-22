@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-namespace Capgemini_Training
+namespace CSharp.Day2_Iteration_and_Conditional_Statements
 {
     /// <summary>
     /// This program let two users play the game of Rock, paper, Scissors on chance based.

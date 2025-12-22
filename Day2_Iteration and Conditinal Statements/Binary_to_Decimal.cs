@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Capgemini_Training
+namespace CSharp.Day2_Iteration_and_Conditional_Statements
 {
     /// <summary>
     /// This profeam converts Binary to Decimal without any inbuilt functions

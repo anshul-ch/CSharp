@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.Design;
 using System.Text;
 
-namespace CapgeminiTraining
+namespace CSharp.Day1_Basic_CSharp
 {
     /// <summary>
     /// This program returns the height characterstics of a person

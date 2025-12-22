@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Capgemini_Training
+namespace CSharp.Day2_Iteration_and_Conditional_Statements
 {
     /// <summary>
     /// Determine the type of triangles based on sides on a triangle

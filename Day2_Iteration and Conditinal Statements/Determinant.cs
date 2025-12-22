@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CapgeminiTraining
+namespace CSharp.Day2_Iteration_and_Conditional_Statements
 {
     /// <summary>
     /// This program finds the quadratic roots based on discriminant

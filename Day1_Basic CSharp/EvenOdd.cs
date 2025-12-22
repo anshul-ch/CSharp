@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 
 
-namespace CapgeminiTraining
+namespace CSharp.Day1_Basic_CSharp
 {
     /// <summary>
     /// THis program checks whether a number is even or odd.
