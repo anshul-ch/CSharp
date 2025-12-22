@@ -1,10 +1,9 @@
-﻿using CapgeminiTraining.Day3_OOPS;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace CapgeminiTraining.Day3_OOPS
+namespace CSharp.Day3_OOPS
 {
     /// <summary>
     /// This program use Error handling in Constructor Validation and Encapsulation

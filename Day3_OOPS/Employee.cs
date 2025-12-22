@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Capgemini_Training
+namespace CSharp.Day3_OOPS
 {
     class Employee
     {
