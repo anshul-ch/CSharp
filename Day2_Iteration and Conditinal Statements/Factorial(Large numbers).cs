@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 
 
-namespace Capgemini_Training
+namespace CSharp.Day2_Iteration_and_Conditional_Statements
 {
     /// <summary>
     /// This program calculates factorual of a number

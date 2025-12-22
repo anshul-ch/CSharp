@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Capgemini_Training
+namespace CSharp.Day2_Iteration_and_Conditional_Statements
 {
     /// <summary>
     /// Checks if the number is a Strong number or not.
