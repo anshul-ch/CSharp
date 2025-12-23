@@ -5,7 +5,9 @@ using System.Text;
 
 namespace CSharp.Day3_OOPS
 {
-
+    /// <summary>
+    /// This program implements the basic usage of abstraction to use a single class dynamically.
+    /// </summary>
     public abstract class TaxCalculate
     {
         public string empName { get; set; }
