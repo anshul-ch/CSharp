@@ -41,12 +41,27 @@ namespace CSharp.Day3_OOPS
     {
         public static void Main(String[] args)
         {
-            IndianTax empIndia = new IndianTax() { empName = "Anuj", income = 1000000 };
-            empIndia.CaculateTax();
-            UStax empUS = new UStax() { empName = "james", income = 250000 };
-            empUS.CaculateTax();
-            empUS.Display();
-            empIndia.Display();
+
+            TaxCalculate selectedTaxSystem = null;
+
+            Console.WriteLine("Enter 1 for India, 2 for US:");
+            string choice = Console.ReadLine();
+            if (choice == "1")
+            {
+                selectedTaxSystem = new IndianTax();
+            }
+            else
+            {
+                selectedTaxSystem = new UStax();
+            }
+
+            Console.Write("Enter Employee Name: ");
+            selectedTaxSystem.empName = Console.ReadLine();
+
+            Console.Write("Enter Income: ");
+            selectedTaxSystem.income = int.Parse(Console.ReadLine());
+
+            selectedTaxSystem.Display();
         }
     }
 }
