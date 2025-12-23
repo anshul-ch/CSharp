@@ -5,8 +5,10 @@ using System.Text;
 namespace CSharp.Day4_OOPS_Practice
 {
     /// <summary>
-    /// This program implements the Interface, In interface it is must to implement it's methods if inherited.
-    /// In abstraction there is only a semi object ype, it's methods are completed in child class.
+    /// This program implements the Interface, In interface it is must to implement 
+    /// (they are rules/structure that all have to follow)
+    /// In abstraction they methods are used by child classes, they can only use these but cannot be changed.
+    /// (they give you the fucntionality but not shown how it is done.)
     /// </summary>
     public interface IPrint
     {
