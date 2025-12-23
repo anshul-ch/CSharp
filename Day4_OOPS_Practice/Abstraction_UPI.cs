@@ -4,6 +4,9 @@ using System.Text;
 
 namespace CSharp.Day4_OOPS_Practice
 {
+    /// <summary>
+    /// This program implements the usage on abstraction and access identifiers with inheritance.
+    /// </summary>
     abstract class Payment
     {
         public decimal Amount { get; }
