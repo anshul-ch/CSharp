@@ -5,6 +5,9 @@ using System.Text;
 
 namespace CSharp.Day4_OOPS_Practice
 {
+    /// <summary>
+    /// Uses interface to implement multiple inheritance with methods having same property.
+    /// </summary>
 
     public interface Vegday
     {
