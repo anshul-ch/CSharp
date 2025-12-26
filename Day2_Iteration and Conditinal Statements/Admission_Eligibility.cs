@@ -27,7 +27,7 @@ namespace CSharp.Day2_Iteration_and_Conditional_Statements
                 isEligible = true;
             }
 
-            if (isEligible = true)
+            if (isEligible == true)
             {
                 Console.WriteLine("You are Eligible for Admission!");
                 
