@@ -4,6 +4,21 @@ using System.Text;
 
 namespace CSharp.Day5_Practice
 {
+    /// <summary>
+    /// Takes a word as input, performs validation, and applies a series of transformations to generate a key.
+    /// </summary>
+    /// <param name="input">The string to be processed. Must be at least 6 characters long and contain only letters.</param>
+    /// <returns>
+    /// The generated key string. Returns an empty string if the input is invalid (null, too short, or contains digits/symbols).
+    /// </returns>
+    /// <remarks>
+    /// Transformation logic:
+    /// 1. Converts input to lowercase.
+    /// 2. Removes all characters with even ASCII values.
+    /// 3. Reverses the remaining string.
+    /// 4. Converts characters at even indices of the reversed string to uppercase.
+    /// </remarks>
+
     public class StringCleaning
     {
         public string CleanseAndInvert(string input)
