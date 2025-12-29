@@ -1,6 +1,11 @@
 ﻿using System;
 namespace CSharp.Day6
 {
+	/// <summary>
+	/// Provides indexed access to the elements of the data collection.
+	/// </summary>
+	/// <remarks>The valid index range is 0 to 2, inclusive. Attempting to access an index outside this range will
+	/// result in an exception.</remarks>
 	public class MyData
 	{
 		private string[] data = new string[3];
