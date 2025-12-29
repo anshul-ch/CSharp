@@ -4,6 +4,12 @@ using System.Text;
 
 namespace CSharp.Day6
 {
+    /// <summary>
+    /// Represents a student with identifying information and a collection of books.
+    /// </summary>
+    /// <remarks>The Student class provides properties for storing the student's name, roll number, and
+    /// address details. It also includes an indexer for accessing up to five books associated with the student by
+    /// index.</remarks>
     public class Student
     {
         public string Name { get; set; }
