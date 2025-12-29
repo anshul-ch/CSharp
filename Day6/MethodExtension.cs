@@ -24,7 +24,7 @@ namespace CSharp.Day6
         {
             char[] charArray = str.ToCharArray();
             Array.Reverse(charArray);
-            return new string(charArray);
+            return new string(charArray.ToString());
         }
     }
     public class MethodExtension
