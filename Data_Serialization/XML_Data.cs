@@ -44,6 +44,7 @@ namespace CSharp.Data_Serialization
         // Helper method to convert object to XML string
         public static string ObjectToXml<T>(T data)
         {
+            /// This function actually converts the data object into XML format and return it 
             XmlSerializer serializer = new XmlSerializer(typeof(T));
 
             using (StringWriter writer = new StringWriter())
