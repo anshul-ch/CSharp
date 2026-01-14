@@ -9,7 +9,7 @@ namespace CSharp.Day1_Basic_CSharp
     /// This program returns the height characterstics of a person
     /// </summary>
     public class Height
-    {   
+    {
         /// <summary>
         /// this function returns the height characterstics
         /// </summary>
@@ -17,13 +17,15 @@ namespace CSharp.Day1_Basic_CSharp
         /// <returns> The predefined characterstics based on height </returns>
         public string CheckHeight(int height)
         {
-            
-            if (height < 150) return "Dwarf";
-            if (height >= 150 && height < 165) return "Average";
-            if (height >= 165 && height < 190) return "Tall";
+            if (height < 150)
+                return "Dwarf";
+            if (height >= 150 && height < 165)
+                return "Average";
+            if (height >= 165 && height < 190)
+                return "Tall";
             return "Abnormal";
-
         }
+
         /// <summary>
         /// Main program
         /// </summary>
@@ -35,7 +37,6 @@ namespace CSharp.Day1_Basic_CSharp
             int person_height = int.Parse(Console.ReadLine());
             string output = check_height.CheckHeight(person_height);
             Console.WriteLine(output);
-
         }
     }
 }
