@@ -11,7 +11,7 @@ obj/
 # .NET project / solution files
 # (You explicitly do NOT want these)
 # ======================================
-*.csproj
+# 
 *.sln
 *.slnx
 
