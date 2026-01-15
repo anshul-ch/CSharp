@@ -5,7 +5,7 @@ namespace CSharp.M1_Practice.Q2_MovieStock
     public class Movie
     {
         public string Title { get; set; }
-        public string Artis { get; set; }
+        public string Artist { get; set; }
         public string Genre { get; set; }
         public int Ratings { get; set; }
     }
@@ -33,7 +33,7 @@ namespace CSharp.M1_Practice.Q2_MovieStock
             {
                 foreach (Movie m in genreMovies)
                 {
-                    Console.WriteLine($"{m.Title} :  {m.Artis}");
+                    Console.WriteLine($"{m.Title} :  {m.Artist}");
                 }
             }
 
@@ -49,7 +49,7 @@ namespace CSharp.M1_Practice.Q2_MovieStock
             string[] data = MovieDetails.Split(",");
             Movie movie = new Movie();
             movie.Title = data[0];
-            movie.Artis = data[1];
+            movie.Artist = data[1];
             movie.Genre = data[2];
             movie.Ratings = int.Parse(data[3]);
             MovieList.Add(movie);
