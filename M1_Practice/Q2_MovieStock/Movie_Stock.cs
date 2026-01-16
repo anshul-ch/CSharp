@@ -2,8 +2,14 @@ using System;
 
 namespace CSharp.M1_Practice.Q2_MovieStock
 {
+    /// <summary>
+    /// Uses Collections to implement a movie search.
+    /// </summary>
     public class Movie
     {
+        /// <summary>
+        /// Contains the basic properties for a Movie.
+        /// </summary>
         public string Title { get; set; }
         public string Artist { get; set; }
         public string Genre { get; set; }

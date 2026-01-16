@@ -4,6 +4,10 @@ using System.Linq;
 
 namespace CSharp.M1_Practice.Q4_NumberGrade
 {
+    /// <summary>
+    /// Calculates the grades based on GPA,
+    /// uses the Implement of Linq and Collections(List)
+    /// </summary>
     class CalculateGrades
     {
         // GIVEN in question template

@@ -3,13 +3,15 @@ using System.Collections;
 
 namespace CSharp.M1_Practice.Q3_YogaClub
 {
+    /// <summary>
+    ///   COntains the properties to be assigned to a user.
+    /// </summary>
     public class YogaMembers
     {
         public int MemeberId { get; set; }
         public int Age { get; set; }
         public double Weight { get; set; }
         public double Height { get; set; }
-        public string Goal { get; set; }
         public double BMI { get; set; }
     }
 
@@ -31,10 +33,11 @@ namespace CSharp.M1_Practice.Q3_YogaClub
 
                 double bmi = CalculateBMI(yogaMembers.Height, yogaMembers.Weight);
                 double fee = CalculateFee(yogaMembers.BMI, yogaMembers.Age);
+                yogaMembers.BMI = bmi;
                 Console.WriteLine($"{yogaMembers.MemeberId} |  BMI : {bmi:F2} | Fee: {fee}");
             }
         }
-
+        // Add members to the Array list
         public static void AddMember(string details)
         {
             string[] data = details.Split(",");
@@ -46,11 +49,17 @@ namespace CSharp.M1_Practice.Q3_YogaClub
 
             memberList.Add(members);
         }
-
+        // function for BMI calculation
         public static double CalculateBMI(double height, double weight)
         {
             return weight / (height * weight);
         }
+        /// <summary>
+        /// Calculates the fee
+        /// </summary>
+        /// <param name="bmi"></param>
+        /// <param name="age"></param>
+        /// <returns></returns>
 
         public static int CalculateFee(double bmi, int age)
         {
