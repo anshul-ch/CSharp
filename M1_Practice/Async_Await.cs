@@ -22,11 +22,8 @@ namespace CSharp.M1_Practice
         public static void Main(string[] args)
         {
             Console.WriteLine("===== APPLICATION STARTED =====\n");
-
-            // -------------------------------------------------
-            // PART 1: THREADING EXAMPLE
-            // -------------------------------------------------
-
+            
+            
             // Create two threads for even and odd number printing
             Thread evenThread = new Thread(PrintEvenNumbers);
             Thread oddThread = new Thread(PrintOddNumbers);
