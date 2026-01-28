@@ -1,6 +1,4 @@
-using System;
-
-namespace CSharp.M1_Practice.Q2_MovieStock
+namespace CSharp.Practice.Q2_MovieStock
 {
     /// <summary>
     /// Uses Collections to implement a movie search.

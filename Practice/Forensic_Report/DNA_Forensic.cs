@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace CSharp.M1_Practice.Forensic_Report;
+﻿namespace CSharp.Practice.Forensic_Report;
 
 class ForensicReport
 {
@@ -32,6 +29,11 @@ class ForensicReport
 
 public class DNA_Forensic
 {
+    /// <summary>
+    /// Gets the number of reports to be added and their details from the user,
+    /// then retrieves and displays the report details for a given date.
+    /// </summary>
+    /// <param name="args"></param>
     public static void Main(String[] args)
     {
         Console.WriteLine("Enter the number of reports to be added:");

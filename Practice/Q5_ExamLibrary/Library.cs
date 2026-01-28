@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-namespace CSharp.M1_Practice.Q5_ExamLibrary;
+﻿namespace CSharp.Practice.Q5_ExamLibrary;
 
 public interface IBook
 {

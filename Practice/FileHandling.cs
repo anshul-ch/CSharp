@@ -1,7 +1,4 @@
-using System;
-using System.IO;
-
-namespace CSharp.M1_Practice
+namespace CSharp.Practice
 {
     /// <summary>
     /// Demonstrates basic file handling in C# by writing

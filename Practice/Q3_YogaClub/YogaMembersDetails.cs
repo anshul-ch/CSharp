@@ -1,7 +1,6 @@
-using System;
 using System.Collections;
 
-namespace CSharp.M1_Practice.Q3_YogaClub
+namespace CSharp.Practice.Q3_YogaClub
 {
     /// <summary>
     ///   COntains the properties to be assigned to a user.
