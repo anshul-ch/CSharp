@@ -1,8 +1,4 @@
-using System;
-using System.Collections;
-using System.Linq;
-
-namespace CSharp.M1_Practice.Q4_NumberGrade
+namespace CSharp.Practice.Q4_NumberGrade
 {
     /// <summary>
     /// Calculates the grades based on GPA,

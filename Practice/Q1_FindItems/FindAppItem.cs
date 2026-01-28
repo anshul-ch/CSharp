@@ -1,8 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-
-namespace CSharp.M1_Practice.Q1_FindItems
+namespace CSharp.Practice.Q1_FindItems
 {
     class FindAppItem
     {

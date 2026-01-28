@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace CSharp.M1_Practice.Forensic_Report;
+﻿namespace CSharp.Practice.Forensic_Report;
 
 class ForensicReport
 {

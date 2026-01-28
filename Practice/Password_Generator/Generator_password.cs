@@ -1,4 +1,4 @@
-﻿namespace CSharp.M1_Practice.Password_Generator
+﻿namespace CSharp.Practice.Password_Generator
 {
     public class Generator_password
     {

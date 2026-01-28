@@ -1,4 +1,4 @@
-﻿namespace CSharp.M1_Practice.Q6_Product_Inventory;
+﻿namespace CSharp.Practice.Q6_Product_Inventory;
 
 public interface IProduct
 {

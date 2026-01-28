@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace CSharp.M1_Practice.Bake_Cake
+﻿namespace CSharp.Practice.Bake_Cake
 {
     class CakeOrder
     {

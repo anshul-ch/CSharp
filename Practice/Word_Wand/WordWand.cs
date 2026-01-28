@@ -1,4 +1,4 @@
-﻿namespace CSharp.M1_Practice.Word_Wand;
+﻿namespace CSharp.Practice.Word_Wand;
 
 public class WordWand
 {

@@ -1,6 +1,4 @@
-using System;
-
-namespace CSharp.M1_Practice
+namespace CSharp.Practice
 {
     // Custom Exception
     public class InsufficientWalletBalanceException : Exception
