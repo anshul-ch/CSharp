@@ -1,5 +1,9 @@
 ﻿namespace CSharp.Practice.Bake_Cake
 {
+    /// <summary>
+    /// Takes Order info and stores in Dictionary and
+    /// perform sorting based on pricing and returns the order details.
+    /// </summary>
     class CakeOrder
     {
         private Dictionary<string, double> orderMap = new Dictionary<string, double>();
@@ -7,6 +11,11 @@
         {
             orderMap[orderID] = cakeCost;
         }
+        /// <summary>
+        /// To get the order details based on pricing
+        /// </summary>
+        /// <param name="cakeCost"></param>
+        /// <returns>a dictionary containing the filtered orders</returns>
         public Dictionary<string, double> FindOrdersAboveSpecificCost(double cakeCost)
         {
             Dictionary<string, double> result = new Dictionary<string, double>();

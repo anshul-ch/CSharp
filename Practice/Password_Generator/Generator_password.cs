@@ -1,5 +1,8 @@
 ﻿namespace CSharp.Practice.Password_Generator
 {
+    /// <summary>
+    /// Takes the userinput username and generates a password if the username is valid
+    /// </summary>
     public class Generator_password
     {
         public static void Main(string[] args)
@@ -14,7 +17,11 @@
             }
             GeneratePasscode(username);
         }
-
+        /// <summary>
+        /// Checks if the username is valid based on specified criteria
+        /// </summary>
+        /// <param name="username"></param>
+        /// <returns>whether the username is valid (true or false)</returns>
         public static bool ValidUserName(string username)
         {
             if (string.IsNullOrWhiteSpace(username) || username.Length < 8)
