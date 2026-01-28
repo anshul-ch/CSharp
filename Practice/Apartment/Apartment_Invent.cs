@@ -51,7 +51,7 @@ public class Apartment_Invent
             double rentamount = double.Parse(parts[1]);
             apartment.addDepartmentDetails(apartname, rentamount);
         }
-        Console.WriteLine("Enter the inimum and maximum rent amount to filter:");
+        Console.WriteLine("Enter the minimum and maximum rent amount to filter:");
         double minrent = double.Parse(Console.ReadLine());
         double maxrent = double.Parse(Console.ReadLine());
         double totalRent = apartment.TotalAmountRentBetweenRange(minrent, maxrent);
