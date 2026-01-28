@@ -2,6 +2,9 @@
 
 class ApartmentDetails
 {
+    /// <summary>
+    /// Takes the user input for apartment details and stores them in a dictionary.
+    /// </summary>
     private string apartmentName { get; set; }
     private double apartmentRent { get; set; }
     private Dictionary<string, double> apartmentMap = new Dictionary<string, double>();
@@ -11,7 +14,12 @@ class ApartmentDetails
        apartmentRent = rentAmount;
         apartmentMap[apartmentName] = apartmentRent;
     }
-
+    /// <summary>
+    /// Gets all the apartments whose rent amount is between the given range.
+    /// </summary>
+    /// <param name="minREnt"></param>
+    /// <param name="maxRent"></param>
+    /// <returns>total sum of rents</returns>
     public double TotalAmountRentBetweenRange(double minREnt, double maxRent)
     {
         double sum = 0;
