@@ -3,10 +3,6 @@ using NUnit.Framework;
 
 namespace CSharp.Adv_Practice
 {
-    // =======================
-    // PRODUCTION LOGIC
-    // =======================
-
     public class ErrorSummary
     {
         public string? ErrorCode { get; set; }
@@ -16,8 +12,7 @@ namespace CSharp.Adv_Practice
     public class ErrorCheck
     {
         public IEnumerable<ErrorSummary> GetTopErrors(
-            IEnumerable<string> lines,
-            int topN)
+            IEnumerable<string> lines,int topN)
         {
             var errorCounts = new Dictionary<string, int>();
             Regex regex = new Regex(@"ERR\d{3}");
