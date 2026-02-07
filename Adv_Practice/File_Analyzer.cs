@@ -1,66 +1,86 @@
-using System;
-using System.IO;
 using System.Text.RegularExpressions;
-
+using NUnit.Framework;
 
 namespace CSharp.Adv_Practice
 {
+    // =======================
+    // PRODUCTION LOGIC
+    // =======================
+
     public class ErrorSummary
     {
-        public string? ErrorCode {get; set;}
-        public int Count {get; set;}
+        public string? ErrorCode { get; set; }
+        public int Count { get; set; }
     }
+
     public class ErrorCheck
     {
-        public IEnumerable<ErrorSummary> GetTopErrord(string filePath, int topN)
+        public IEnumerable<ErrorSummary> GetTopErrors(
+            IEnumerable<string> lines,
+            int topN)
         {
             var errorCounts = new Dictionary<string, int>();
             Regex regex = new Regex(@"ERR\d{3}");
-            foreach(var line in File.ReadLines(filePath))
+
+            foreach (var line in lines)
             {
                 var match = regex.Match(line);
-                if (match.Success)
-                {
-                    string errorCodes = match.Value;
-                    if (!errorCounts.ContainsKey(errorCodes))
-                    {
-                        errorCounts[errorCodes] =0;
-                    }
-                    errorCounts[errorCodes]++;
-                }
+                if (!match.Success)
+                    continue;
+
+                string code = match.Value;
+
+                if (!errorCounts.ContainsKey(code))
+                    errorCounts[code] = 0;
+
+                errorCounts[code]++;
             }
-            return errorCounts.OrderByDescending(e => e.Value).Take(topN).Select(e => new ErrorSummary
-            {
-                ErrorCode = e.Key,
-                Count = e.Value
-            });
+
+            return errorCounts
+                .OrderByDescending(e => e.Value)
+                .Take(topN)
+                .Select(e => new ErrorSummary
+                {
+                    ErrorCode = e.Key,
+                    Count = e.Value
+                });
         }
     }
 
-    class File_Analyzer
+class File_Analyzer
     {
         public static void Main(String[] args)
         {
-            var error = new ErrorCheck();
-            string filePath = "app.log";
+            
+        }
+    }
 
-        // Create local log file
-        File.WriteAllLines(filePath, new[]
+    [TestFixture]
+    public class ErrorCheckTests
+    {
+        [Test]
+        public void Test_GetTopErrors()
         {
-            "INFO Application started",
-            "ERROR ERR101 Database failure",
-            "ERROR ERR101 Database timeout",
-            "WARN Low memory",
-            "ERROR ERR202 Invalid input",
-            "ERROR ERR101 Connection lost",
-            "ERROR ERR303 Disk full"
-        });
-
-            var result =  error.GetTopErrord(filePath, 5);
-            foreach(var item in result)
+            // INPUT
+            var inputLines = new[]
             {
-                Console.WriteLine(item.Count +"||" + item.ErrorCode);
-            }
+                "ERROR ERR101 Failed",
+                "ERROR ERR101 Timeout",
+                "ERROR ERR202 Invalid input",
+                "ERROR ERR101 Connection lost",
+                "ERROR ERR303 Disk full"
+            };
+
+            var checkErr = new ErrorCheck();
+
+            var result = checkErr.GetTopErrors(inputLines, 2).ToList();
+
+            // ASSERT
+            Assert.That(result.Count, Is.EqualTo(2));
+            Assert.That(result[0].ErrorCode, Is.EqualTo("ERR101"));
+            Assert.That(result[0].Count, Is.EqualTo(3));
+            Assert.That(result[1].ErrorCode, Is.EqualTo("ERR202"));
+            Assert.That(result[1].Count, Is.EqualTo(1));
         }
     }
 }
