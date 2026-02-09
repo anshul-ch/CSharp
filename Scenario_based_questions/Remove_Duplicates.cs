@@ -1,36 +1,39 @@
 ﻿using System;
 
-class Remove_Duplicates
+namespace CSharp.Scenario_based_questions
 {
-    static void Main()
+    class Remove_Duplicates
     {
-        int[] data = { 4, 5, 4, 3, 5, 2, 3 };
-        int[] unique = new int[data.Length];
-        int count = 0;
-
-        for (int i = 0; i < data.Length; i++)
+        static void Main()
         {
-            bool exists = false;
+            int[] data = { 4, 5, 4, 3, 5, 2, 3 };
+            int[] unique = new int[data.Length];
+            int count = 0;
 
-            for (int j = 0; j < count; j++)
+            for (int i = 0; i < data.Length; i++)
             {
-                if (unique[j] == data[i])
+                bool exists = false;
+
+                for (int j = 0; j < count; j++)
                 {
-                    exists = true;
-                    break;
+                    if (unique[j] == data[i])
+                    {
+                        exists = true;
+                        break;
+                    }
+                }
+
+                if (!exists)
+                {
+                    unique[count] = data[i];
+                    count++;
                 }
             }
 
-            if (!exists)
+            for (int i = 0; i < count; i++)
             {
-                unique[count] = data[i];
-                count++;
+                Console.Write(unique[i] + " ");
             }
-        }
-
-        for (int i = 0; i < count; i++)
-        {
-            Console.Write(unique[i] + " ");
         }
     }
 }

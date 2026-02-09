@@ -1,39 +1,42 @@
 ﻿using System;
 
-class SalesAnalysis
+namespace CSharp.Scenario_based_questions
 {
-    static void Main()
+    class SalesAnalysis
     {
-        int[] sales = new int[7];
-
-        for (int i = 0; i < 7; i++)
+        static void Main()
         {
-            sales[i] = Convert.ToInt32(Console.ReadLine());
-        }
+            int[] sales = new int[7];
 
-        int max = sales[0];
-        int min = sales[0];
-        int sum = 0;
-
-        for (int i = 0; i < sales.Length; i++)
-        {
-            sum += sales[i];
-
-            if (sales[i] > max)
+            for (int i = 0; i < 7; i++)
             {
-                max = sales[i];
+                sales[i] = Convert.ToInt32(Console.ReadLine());
             }
 
-            if (sales[i] < min)
+            int max = sales[0];
+            int min = sales[0];
+            int sum = 0;
+
+            for (int i = 0; i < sales.Length; i++)
             {
-                min = sales[i];
+                sum += sales[i];
+
+                if (sales[i] > max)
+                {
+                    max = sales[i];
+                }
+
+                if (sales[i] < min)
+                {
+                    min = sales[i];
+                }
             }
+
+            double avg = (double)sum / sales.Length;
+
+            Console.WriteLine("Highest Sale: " + max);
+            Console.WriteLine("Lowest Sale: " + min);
+            Console.WriteLine("Average Sale: " + avg);
         }
-
-        double avg = (double)sum / sales.Length;
-
-        Console.WriteLine("Highest Sale: " + max);
-        Console.WriteLine("Lowest Sale: " + min);
-        Console.WriteLine("Average Sale: " + avg);
     }
 }
