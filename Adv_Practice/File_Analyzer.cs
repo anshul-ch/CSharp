@@ -12,7 +12,7 @@ namespace CSharp.Adv_Practice
     public class ErrorCheck
     {
         public IEnumerable<ErrorSummary> GetTopErrors(
-            IEnumerable<string> lines,int topN)
+            IEnumerable<string> lines, int topN)
         {
             var errorCounts = new Dictionary<string, int>();
             Regex regex = new Regex(@"ERR\d{3}");
@@ -42,11 +42,11 @@ namespace CSharp.Adv_Practice
         }
     }
 
-class File_Analyzer
+    class File_Analyzer
     {
         public static void Main(String[] args)
         {
-            
+
         }
     }
 
