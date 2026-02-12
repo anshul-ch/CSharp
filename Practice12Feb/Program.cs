@@ -13,10 +13,17 @@ public class Program
     //     int final  = Convert.ToInt32(result*number);
     //    Console.WriteLine(final);
 
+<<<<<<< HEAD
         // to remove the curreny formatting
     //Console.WriteLine(Regex.Replace("$1,500.75", "[^0-9.]", ""));
     
     // check numebers and sum them
+=======
+        // to rmeove the curreny formatting
+    //Console.WriteLine(Regex.Replace("$1,500.75", "[^0-9.]", ""));
+    
+    // check numebers and su them
+>>>>>>> 06f5ad049f0d2260755041d46e145099a31dc261
     // string input = "8 16 32 bits";
     // string[] array = input.Split(" ");
     // int sum =0;
