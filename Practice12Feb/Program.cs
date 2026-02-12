@@ -42,6 +42,11 @@ public class Program
         //     }
         // }
         // Console.WriteLine(total);
+
+        // string input = "Hack10101Rank1rank";
+        // string pattern = @"^[a-zA-Z]+\d+[a-zA-Z]+\d+[a-zA-Z]+";
+        // Console.WriteLine(Regex.IsMatch(input, pattern)? "true":"false");
+
     }
     
 }
