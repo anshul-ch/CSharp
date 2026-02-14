@@ -4,14 +4,29 @@ class Program
     static void Main()
     {
         string cs = @"Data Source=.\SQLEXPRESS;Database=TrainingDB;Persist Security Info=True;User ID=sa;Password=1234;Pooling=False;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=True;Command Timeout=0";
-        string sql = "SELECT EmployeeId, FullName, Department, Salary FROM dbo.Employees ORDER BY EmployeeId";
-        string insetSql = "Insert into dbo.Employee Values(101,'Amit', 'CS',45000)";
+
+        string insertSql = @"INSERT INTO dbo.Employees(FullName, Department, Salary)VALUES (@Name, @Dept, @Salary)";
+
+        string selectSql = @"SELECT EmployeeId, FullName, Department, Salary FROM dbo.Employees ORDER BY EmployeeId";
+
         using (var con = new SqlConnection(cs))
-        using (var cmd = new SqlCommand(sql, con))
         {
             con.Open();
 
-            using (var reader = cmd.ExecuteReader())
+            // ---------------- INSERT ----------------
+            using (var insertCmd = new SqlCommand(insertSql, con))
+            {
+                insertCmd.Parameters.AddWithValue("@Name", "Amit");
+                insertCmd.Parameters.AddWithValue("@Dept", "CS");
+                insertCmd.Parameters.AddWithValue("@Salary", 45000);
+
+                int rows = insertCmd.ExecuteNonQuery();
+                Console.WriteLine($"Inserted Rows: {rows}");
+            }
+
+            // ---------------- SELECT ----------------
+            using (var selectCmd = new SqlCommand(selectSql, con))
+            using (var reader = selectCmd.ExecuteReader())
             {
                 while (reader.Read())
                 {
@@ -26,4 +41,3 @@ class Program
         }
     }
 }
-
