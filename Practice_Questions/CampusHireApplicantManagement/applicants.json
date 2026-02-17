@@ -1,0 +1,10 @@
+[
+  {
+    "ApplicantId": "CH123456",
+    "Name": "Amit",
+    "CurrentLocation": 0,
+    "PreferredLocation": 3,
+    "CoreCompetency": 0,
+    "PassingYear": 2025
+  }
+]
